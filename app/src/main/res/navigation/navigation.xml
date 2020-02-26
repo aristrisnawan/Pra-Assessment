@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation" app:startDestination="@id/main">
+
+    <fragment android:id="@+id/main" android:name="org.d3ifcool4056.myapplication.main" android:label="Bangun Datar"
+              tools:layout="@layout/fragment_main"
+    >
+        <action android:id="@+id/action_main_to_segitiga" app:destination="@id/segitiga"/>
+        <action android:id="@+id/action_main_to_persegiPanjang" app:destination="@id/persegiPanjang"/>
+        <action android:id="@+id/action_main_to_about" app:destination="@id/about"/>
+    </fragment>
+    <fragment android:id="@+id/about" android:name="org.d3ifcool4056.myapplication.about" android:label="about"
+            tools:layout="@layout/fragment_about"
+    />
+    <fragment android:id="@+id/persegiPanjang" android:name="org.d3ifcool4056.myapplication.PersegiPanjang"
+              android:label="Persegi Panjang" tools:layout="@layout/fragment_persegi_panjang"/>
+    <fragment android:id="@+id/segitiga" android:name="org.d3ifcool4056.myapplication.segitiga"
+              android:label="Segitiga" tools:layout="@layout/fragment_segitiga"/>
+</navigation>
